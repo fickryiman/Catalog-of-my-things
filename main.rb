@@ -29,6 +29,7 @@ def options_menu
   puts "\nPlease select the options number: "
   puts '1. List All Books'
   puts '2. List All Music Albums'
+
   puts '3. List All Games' # Added option for listing games
   puts "4. List All Books Label (e.g. 'Gift', 'New')"
   puts "5. List All Music Genres (e.g 'Comedy', 'Thriller')"
@@ -36,6 +37,7 @@ def options_menu
   puts '7. Add a Book'
   puts '8. Add a Music Album'
   puts '9. Add a Game' # Added option for adding a game
+
   puts '0. Quit / Exit from App'
 end
 
