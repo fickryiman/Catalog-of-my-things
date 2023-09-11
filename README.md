@@ -260,7 +260,7 @@ Run Rspec Actions Test
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Any Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [https://github.com/fickryiman/Catalog-of-my-things.git/issues](../../issues/).
 
