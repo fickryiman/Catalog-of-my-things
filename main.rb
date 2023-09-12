@@ -1,3 +1,5 @@
+require_relative 'item'
+require_relative 'game' # Include the game.rb file
 require_relative 'book_app'
 
 APP = BookApp.new
@@ -30,13 +32,15 @@ def options_menu
   puts "\nPlease select the options number: "
   puts '1. List All Books'
   puts '2. List All Music Albums'
-  puts '3. List All Games'
+
+  puts '3. List All Games' # Added option for listing games
   puts "4. List All Books Label (e.g. 'Gift', 'New')"
   puts "5. List All Music Genres (e.g 'Comedy', 'Thriller')"
-  puts "6. List All Games Authors (e.g. 'Stephen King')"
+  puts "6. List All Games Authors (e.g. 'Stephen King')" # Added option for listing game authors
   puts '7. Add a Book'
   puts '8. Add a Music Album'
-  puts '9. Add a Game'
+  puts '9. Add a Game' # Added option for adding a game
+
   puts '0. Quit / Exit from App'
 end
 
