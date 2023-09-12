@@ -1,5 +1,8 @@
 require_relative 'item'
 require_relative 'game' # Include the game.rb file
+require_relative 'book_app'
+
+APP = BookApp.new
 
 def start
   puts "\nWelcome to Catalog of Things App! \n"
@@ -44,11 +47,11 @@ end
 def book_menu(user_input)
   case user_input
   when 1
-    puts 'user chooses 1. List All Books'
+    APP.list_all_books
   when 4
-    puts "user chooses 4. List All Books Label (e.g. 'Gift', 'New')"
+    APP.list_all_books_label
   when 7
-    puts 'user chooses 7. Add a Book'
+    APP.add_book
   end
 end
 
