@@ -8,7 +8,7 @@ class BookApp
     @labels = []
   end
 
-  def list_all_books 
+  def list_all_books
     if @books.empty?
       puts "\nNo Book added"
     else
