@@ -1,6 +1,5 @@
-require_relative 'book_app'
-
-APP = BookApp.new
+require_relative 'book'
+require_relative 'label'
 
 def start
   puts "\nWelcome to Catalog of Things App! \n"
@@ -9,7 +8,6 @@ def start
     options_menu
 
     user_input = gets.chomp.to_i
-    print "\nSelected Menu: #{user_input}\n"
 
     case user_input
     when 1, 4, 7
@@ -43,11 +41,11 @@ end
 def book_menu(user_input)
   case user_input
   when 1
-    APP.list_all_books
+    Book.list_all_books
   when 4
-    APP.list_all_books_label
+    Label.list_all_labels
   when 7
-    APP.add_book
+    Book.add_book
   end
 end
 
