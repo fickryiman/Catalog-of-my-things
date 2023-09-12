@@ -11,7 +11,7 @@ def start
   loop do
     options_menu
     
-    print "\nEnter your choice: "
+    print "\nEnter the options number: "
     user_input = gets.chomp.to_i
 
     case user_input
