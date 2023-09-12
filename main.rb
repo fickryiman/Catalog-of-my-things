@@ -1,12 +1,16 @@
 require_relative 'book'
 require_relative 'label'
+require_relative 'item'
+require_relative 'game' # Include the game.rb file
+require_relative 'book_app'
 
 def start
   puts "\nWelcome to Catalog of Things App! \n"
 
   loop do
     options_menu
-
+    
+    print "\nEnter your choice: "
     user_input = gets.chomp.to_i
 
     case user_input
