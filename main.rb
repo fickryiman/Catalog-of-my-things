@@ -1,6 +1,8 @@
 require_relative 'book_app'
+require_relative 'music_app'
 
 APP = BookApp.new
+App2 = MusicApp.new
 
 def start
   puts "\nWelcome to Catalog of Things App! \n"
@@ -54,11 +56,11 @@ end
 def music_album_menu(user_input)
   case user_input
   when 2
-    puts 'user chooses 2. List All Music Albums'
+    App2.list_music_album
   when 5
-    puts "user chooses 5. List All Music Genres (e.g 'Comedy', 'Thriller')"
+    App2.list_music_genre
   when 8
-    puts 'user chooses 8. Add a Music Album'
+    App2.add_music_album
   end
 end
 
