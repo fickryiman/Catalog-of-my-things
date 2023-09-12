@@ -1,6 +1,6 @@
 class GenreMusic
-    attr_accessor: items, :name
-    attr_reader: id
+    attr_accessor :items, :name
+    attr_reader :id
 
     def initialize(id, name, items)
         @id = id
