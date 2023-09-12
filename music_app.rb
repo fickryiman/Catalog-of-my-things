@@ -25,35 +25,35 @@ class MusicApp
 
   def list_music_album
     if File.exist?('musicAlbum.json')
-        music_data = JSON.parse(File.read('musicAlbum.json'))
+      music_data = JSON.parse(File.read('musicAlbum.json'))
 
-    if music_data.empty?
-      puts 'No music album available'
-    else
+      if music_data.empty?
+        puts 'No music album available'
+      else
         music_data.each_with_index do |music, i|
-        puts "Number: #{i + 1}, Publisher: #{music['publisher']}, Cover_state: #{music['cover_state']},
+          puts "Number: #{i + 1}, Publisher: #{music['publisher']}, Cover_state: #{music['cover_state']},
             Publish_date: #{music['publish_date']}, Archived: #{music['archived']}, On_spotify: #{music['on_spotify']}"
+        end
       end
-    end
     else
-        puts 'The musicAlbum file does not exist.'
+      puts 'The musicAlbum file does not exist.'
     end
   end
 
   def list_music_genre
     if File.exist?('genreMusic.json')
-        genre_data = JSON.parse(File.read('genreMusic.json'))
+      genre_data = JSON.parse(File.read('genreMusic.json'))
 
-    if genre_data.empty?
-      puts 'No genre of music available'
-    else
+      if genre_data.empty?
+        puts 'No genre of music available'
+      else
         genre_data.each_with_index do |genre, i|
-        puts "Number: #{i + 1}, id: #{genre[id]}, Name: #{genre[name]},
+          puts "Number: #{i + 1}, id: #{genre[id]}, Name: #{genre[name]},
             Items: #{genre[items]}"
+        end
       end
-    end
     else
-        puts 'genreMusic file does not exist'
+      puts 'genreMusic file does not exist'
     end
   end
 
