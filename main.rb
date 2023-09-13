@@ -1,9 +1,10 @@
+require_relative 'book'
+require_relative 'label'
 require_relative 'item'
 require_relative 'game' # Include the game.rb file
 require_relative 'book_app'
 require_relative 'music_app'
 
-APP = BookApp.new
 App2 = MusicApp.new
 
 def start
@@ -12,8 +13,8 @@ def start
   loop do
     options_menu
 
+    print "\nEnter the options number: "
     user_input = gets.chomp.to_i
-    print "\nSelected Menu: #{user_input}\n"
 
     case user_input
     when 1, 4, 7
@@ -49,11 +50,11 @@ end
 def book_menu(user_input)
   case user_input
   when 1
-    APP.list_all_books
+    Book.list_all_books
   when 4
-    APP.list_all_books_label
+    Label.list_all_labels
   when 7
-    APP.add_book
+    Book.add_book
   end
 end
 
