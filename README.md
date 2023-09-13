@@ -1,14 +1,12 @@
-# Catalog-of-my-things
-This project is  a console app that will help us to keep a record of different types of things: books, music albums, movies, and games. Everything will be based on the UML class diagram presented below. The data will be stored in JSON files but we will also prepare a database with tables structure analogical to our program's class structure.
-
-<h1>Catalog Of My Things</h1>
+<!-- PROJECT DESCRIPTION -->
+# 📖 Catalog-Of-My-Things<a name="about-project"></a>
+> This project is  a console app that will help us to keep a record of different types of things: books, music albums, movies, and games. Everything will be based on the UML class diagram presented below. The data will be stored in JSON files but we will also prepare a database with tables structure analogical to our program's class structure.
 
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
-- [Catalog-of-my-things](#catalog-of-my-things)
-- [📗 Table of Contents](#-table-of-contents)
 - [📖 Catalog-Of-My-Things](#-catalog-of-my-things)
+- [📗 Table of Contents](#-table-of-contents)
     - [How to build the "Catalog Of My Things" application?](#how-to-build-the-catalog-of-my-things-application)
     - [Projects list](#projects-list)
       - [Logic](#logic)
@@ -30,10 +28,6 @@ This project is  a console app that will help us to keep a record of different t
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
-
-<!-- PROJECT DESCRIPTION -->
-# 📖 Catalog-Of-My-Things<a name="about-project"></a>
-> This project is  a console app that will help us to keep a record of different types of things: books, music albums, movies, and games. Everything will be based on the UML class diagram presented below. The data will be stored in JSON files but we will also prepare a database with tables structure analogical to our program's class structure.
 
 <!-- > Describe your project in 1 or 2 sentences. -->
 ### How to build the "Catalog Of My Things" application?
@@ -69,10 +63,6 @@ This project is  a console app that will help us to keep a record of different t
         - should override the method from the parent class.
         - should return true if parent's method returns true AND if on_spotify equals true.
         - otherwise, it should return false.
-    - can_be_archived?() in the Movie class
-        - should override the method from the parent class.
-        - should return true if parent's method returns true OR if silent equals true.
-        - otherwise, it should return false.
     - can_be_archived?() in the Game class
         - should override the method from the parent class.
         - should return true if parent's method returns true AND if last_played_at is older than 2 years.
@@ -90,15 +80,12 @@ This project is  a console app that will help us to keep a record of different t
 - The following options should be available:
     - List all books
     - List all music albums
-    - List all movies
     - List of games
     - List all genres (e.g 'Comedy', 'Thriller')
     - List all labels (e.g. 'Gift', 'New')
     - List all authors (e.g. 'Stephen King')
-    - List all sources (e.g. 'From a friend', 'Online shop')
     - Add a book
     - Add a music album
-    - Add a movie
     - Add a game
  - All data should be preserved by saving collections in .json files.
 
