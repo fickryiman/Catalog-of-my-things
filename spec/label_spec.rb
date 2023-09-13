@@ -32,7 +32,7 @@ describe Label do
 
   describe '-> Method .load_label' do
     context 'when labels.json exist and is not empty' do
-      let(:label_data) { [{ 'id' => 1, 'title' => 'Label Title', 'color' => 'Label Color'}]}
+      let(:label_data) { [{ 'id' => 1, 'title' => 'Label Title', 'color' => 'Label Color' }] }
 
       before do
         allow(File).to receive(:exist?).with('labels.json').and_return(true)
