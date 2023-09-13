@@ -14,14 +14,20 @@ class GameApp
   end
 
   def list_games
-    if @games.empty?
-      puts 'No games available'
-    else
-      puts 'List of Games:'
-      @games.each_with_index do |game, i|
-        puts "Number: #{i + 1}, Title: #{game.title}, Multiplayer: #{game.multiplayer},
-         Last Played: #{game.last_played_at}, Archived: #{game.archived}"
+    if File.exist?('game.json')
+      game_data = JSON.parse(File.read('game.json'))
+
+      if game_data.empty?
+        puts 'No games available'
+      else
+        puts 'List of Games:'
+        game_data.each_with_index do |game, i|
+          puts "Number: #{i + 1}, ID: #{game['id']}, Multiplayer: #{game['multiplayer']},
+         Last Played: #{game['last_played_at']}, Archived: #{game['archived']}"
+        end
       end
+    else
+      puts 'game file not present !'
     end
   end
 
@@ -39,7 +45,7 @@ class GameApp
   def add_game
     id = Random.rand(1...1000)
     puts 'Enter title: '
-    title = gets.chomp
+    gets.chomp
     puts 'Is it multiplayer? (true/false): '
     multiplayer = gets.chomp.downcase == 'true'
     puts 'Enter last played date (yyyy-mm-dd): '
@@ -51,7 +57,6 @@ class GameApp
     # Save data to the JSON file after adding a game
     save_data('game.json', @games)
     puts 'Game added successfully'
-
   end
 
   private
@@ -63,7 +68,7 @@ class GameApp
       []
     end
   end
-  
+
   def save_data(filename, data)
     File.write(filename, JSON.pretty_generate(data))
   end
