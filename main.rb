@@ -1,3 +1,5 @@
+require_relative 'book'
+require_relative 'label'
 require_relative 'item'
 require_relative 'game_app'
 
@@ -9,8 +11,8 @@ def start
   loop do
     options_menu
 
+    print "\nEnter the options number: "
     user_input = gets.chomp.to_i
-    print "\nSelected Menu: #{user_input}\n"
 
     case user_input
     when 1
