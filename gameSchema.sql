@@ -10,6 +10,11 @@ CREATE TABLE items (
 
 CREATE TABLE games (
     item_id INT PRIMARY KEY REFERENCES items(id),
+    label VARCHAR(100),
+    genre VARCHAR(100),
+    author VARCHAR(100),
+    publish_date DATE,
+    archived BOOLEAN,
     last_played_at TIMESTAMP
 );
 
