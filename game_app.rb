@@ -19,7 +19,8 @@ class GameApp
     else
       puts 'List of Games:'
       @games.each_with_index do |game, i|
-        puts "Number: #{i + 1}, Title: #{game.title}, Multiplayer: #{game.multiplayer}, Last Played: #{game.last_played_at}, Archived: #{game.archived}"
+        puts "Number: #{i + 1}, Title: #{game.title}, Multiplayer: #{game.multiplayer},
+         Last Played: #{game.last_played_at}, Archived: #{game.archived}"
       end
     end
   end
