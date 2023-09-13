@@ -10,7 +10,7 @@ class GameApp
     @authors = []
 
     # Load data from the JSON file, if it exists
-    load_data
+    load_data('game.json')
   end
 
   def list_games
@@ -37,6 +37,7 @@ class GameApp
   end
 
   def add_game
+    id = Random.rand(1...1000)
     puts 'Enter title: '
     title = gets.chomp
     puts 'Is it multiplayer? (true/false): '
@@ -44,34 +45,26 @@ class GameApp
     puts 'Enter last played date (yyyy-mm-dd): '
     last_played_at = Date.parse(gets.chomp)
 
-    game = Game.new(nil, Date.today, false, title, multiplayer, last_played_at)
+    game = Game.new(id, Date.today, false, multiplayer, last_played_at)
     @games << game
 
+    # Save data to the JSON file after adding a game
+    save_data('game.json', @games)
     puts 'Game added successfully'
 
-    # Save data to the JSON file after adding a game
-    save_data
   end
 
   private
 
-  def load_data
-    if File.exist?('game.json')
-      data = JSON.parse(File.read('game.json'))
-
-      # Load games and authors from the JSON file
-      @games = data['games'].map { |game_data| Game.new(*game_data) }
-      @authors = data['authors'].map { |author_data| Author.new(*author_data) }
+  def load_data(filename)
+    if File.exist?(filename)
+      JSON.parse(File.read(filename))
+    else
+      []
     end
   end
-
-  def save_data
-    data = {
-      'games' => @games.map(&:to_h),
-      'authors' => @authors.map(&:to_h)
-    }
-
-    # Save data to the JSON file
-    File.write('game.json', JSON.generate(data))
+  
+  def save_data(filename, data)
+    File.write(filename, JSON.pretty_generate(data))
   end
 end

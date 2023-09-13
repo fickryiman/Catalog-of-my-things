@@ -1,5 +1,9 @@
-{
-    "games": [],
-    "authors": []
+[
+  {
+    "id": 22,
+    "publish_date": "2023-09-13",
+    "archived": false,
+    "multiplayer": true,
+    "last_played_at": "2023-02-11"
   }
-  
+]
