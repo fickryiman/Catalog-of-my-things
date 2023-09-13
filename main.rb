@@ -3,7 +3,9 @@ require_relative 'label'
 require_relative 'item'
 require_relative 'game' # Include the game.rb file
 require_relative 'music_app'
+require_relative 'game_app'
 
+AppGame = GameApp.new
 App2 = MusicApp.new
 
 def start
@@ -71,11 +73,11 @@ end
 def game_menu(user_input)
   case user_input
   when 3
-    puts 'user chooses 3. List All Games'
+    AppGame.list_games
   when 6
-    puts "user chooses 6. List All Games Authors (e.g. 'Stephen King')"
+    AppGame.list_authors
   when 9
-    puts 'user chooses 9. Add a Game'
+    AppGame.add_game
   end
 end
 

@@ -1,4 +1,5 @@
 require_relative 'item'
+require 'json'
 
 class Game < Item
   attr_accessor :multiplayer, :last_played_at
@@ -11,5 +12,15 @@ class Game < Item
 
   def can_be_archived?
     super && last_played_at <= Date.today - (2 * 365) # Archiving games after 2 years of inactivity
+  end
+
+  def to_json(option = {})
+    {
+      id: @id,
+      publish_date: @publish_date,
+      archived: @archived,
+      multiplayer: @multiplayer,
+      last_played_at: @last_played_at
+    }.to_json(option)
   end
 end
