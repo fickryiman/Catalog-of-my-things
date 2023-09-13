@@ -2,7 +2,6 @@ require_relative 'book'
 require_relative 'label'
 require_relative 'item'
 require_relative 'game' # Include the game.rb file
-require_relative 'book_app'
 require_relative 'music_app'
 
 App2 = MusicApp.new
