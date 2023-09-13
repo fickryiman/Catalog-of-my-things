@@ -27,7 +27,7 @@ describe Book do
       expect(Book).to receive(:new).with(1, 'Publisher', 'bad', Date.today, label).and_return(book)
 
       data = Book.update_book(publisher: 'Publisher', cover_state: 'bad', publish_date: Date.today,
-                                     label_title: 'Label Title', label_color: 'Label Color')
+                              label_title: 'Label Title', label_color: 'Label Color')
 
       expect(data[:book]).to eq(book)
       expect(data[:label]).to eq(label)
