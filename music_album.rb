@@ -1,4 +1,5 @@
 require_relative 'item'
+require 'json'
 
 class MusicAlbum < Item
   attr_accessor :publisher, :cover_state
@@ -13,5 +14,16 @@ class MusicAlbum < Item
 
   def can_be_archived?
     super && @on_spotify == true
+  end
+
+  def to_json(option = {})
+    {
+      id: @id,
+      publisher: @publisher,
+      cover_state: @cover_state,
+      publish_date: @publish_date,
+      archived: false,
+      on_spotify: @on_spotify
+    }.to_json(option)
   end
 end
