@@ -8,7 +8,6 @@ require_relative 'game_app'
 AppGame = GameApp.new
 App2 = MusicApp.new
 
-
 def start
   puts "\nWelcome to Catalog of Things App! \n"
 
