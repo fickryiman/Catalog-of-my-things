@@ -16,7 +16,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Tools i have used for this project ](#tools-i-have-used-for-this-project-)
     - [Key Features ](#key-features-)
-    - [Live Preview](#live-preview)
+    - [Demo Project Video](#demo-project-video)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -153,8 +153,8 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Live Preview
-[![Watch the video](xxx)](xxx)
+### Demo Project Video 
+[![Watch the video](./public/video_demo.png)](https://www.youtube.com/watch?v=B_Q1ST4PHag)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
