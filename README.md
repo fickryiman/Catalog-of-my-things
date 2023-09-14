@@ -100,30 +100,22 @@
 <details>
   <summary>Client Side / Front-End</summary>
   <ul>
-    <li><a href="https://www.w3.org/html/">HTML</a></li>
-    <li><a href="https://www.w3.org/Style/CSS/">CSS</a></li>
-    <li><a href="https://www.javascript.com/">Javascript</a></li>
-    <li><a href="https://create-react-app.dev/">React</a></li>
-    <li><a href="https://reactrouter.com/">React Router</a></li>
+    <li><a href="https://www.tutorialspoint.com/ruby/interactive_ruby.htm">IRB(Interactive Ruby Shell)</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server Side / Back-End</summary>
   <ul>
-    <li><a href="https://www.json.org/json-en.html">JSON</a></li>
-    <li><a href="https://nodejs.org/en/">Node.js</a></li>
-    <li><a href="https://redux.js.org/">Redux</a></li>
-    <li><a href="https://www.iqair.com/">Air Quality API</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
 <details>
     <summary>Package, Library, Framework</summary>
       <ul>
-        <li><a href="https://jestjs.io/">Jest</a></li>
-        <li><a href="https://axios-http.com/docs/intro">axios</a></li>
-        <li><a href="https://redux-toolkit.js.org/">Reduxjs Toolkit</a></li>
+        <li><a href="https://bundler.io/">Bundler</a></li>
+        <li><a href="https://rspec.info/">rspec</a></li>
       </ul>
   </details>
 
@@ -133,7 +125,6 @@
     <summary>Code Convention, Code Analysis</summary>
       <ul>
         <li><a href="https://rubocop.org/">Rubocop</a></li>
-        <li><a href="https://www.tutorialspoint.com/ruby/interactive_ruby.htm">IRB(Interactive Ruby Shell)</a></li>
       </ul>
   </details>
   <details>
