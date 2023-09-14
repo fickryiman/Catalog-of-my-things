@@ -1,11 +1,11 @@
-require_relative '/game' # Assuming your Game class is defined in game.rb
+require_relative '../game' # Assuming your Game class is defined in game.rb
 require 'date' # You'll need this for Date.today in some tests
 require 'json' # You'll need this for JSON parsing in some tests
 require 'rspec'
 
 describe Game do
   let(:game) do
-    Game.new(1, Date.new(2022, 1, 1), false, true, Date.new(2022, 1, 15))
+    Game.new(1, Date.new(2022, 1, 1), false, true, Date.new(2020, 1, 1)) # Last played more than 2 years ago
   end
 
   describe '#can_be_archived?' do
@@ -32,7 +32,7 @@ describe Game do
       expect(parsed_data['publish_date']).to eq('2022-01-01')
       expect(parsed_data['archived']).to be false
       expect(parsed_data['multiplayer']).to be true
-      expect(parsed_data['last_played_at']).to eq('2022-01-15')
+      expect(parsed_data['last_played_at']).to eq('2020-01-01')
     end
   end
 end

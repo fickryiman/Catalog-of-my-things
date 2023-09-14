@@ -1,6 +1,7 @@
-require_relative 'author' # Assuming your Author class is defined in author.rb
-require_relative 'game'   # Assuming you want to test the publish_item method
+require_relative '../author' # Assuming your Author class is defined in author.rb
+require_relative '../game'   # Assuming you want to test the publish_item method
 require 'rspec'
+require 'date' # Add this line to require the 'date' library
 
 describe Author do
   let(:author) { Author.new('John', 'Doe') }
