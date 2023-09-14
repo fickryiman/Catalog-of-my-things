@@ -16,6 +16,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Tools i have used for this project ](#tools-i-have-used-for-this-project-)
     - [Key Features ](#key-features-)
+    - [Live Preview](#live-preview)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -148,6 +149,12 @@
 
 - Store data in files
 - Build interactive console apps
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Live Preview
+[![Watch the video](xxx)](xxx)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
