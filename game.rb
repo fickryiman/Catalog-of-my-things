@@ -11,16 +11,26 @@ class Game < Item
   end
 
   def can_be_archived?
-    super && last_played_at <= Date.today - (2 * 365) # Archiving games after 2 years of inactivity
+    today = Date.today
+    inactive_days = (today - last_played_at).to_i
+
+    puts "Today: #{today}"
+    puts "Last Played At: #{last_played_at}"
+    puts "Inactive Days: #{inactive_days}"
+
+    result = archived || inactive_days > (2 * 365) # Archiving games after 2 years of inactivity
+    puts "Result: #{result}"
+
+    result
   end
 
   def to_json(option = {})
     {
       id: @id,
-      publish_date: @publish_date,
+      publish_date: @publish_date.to_s, # Convert Date to a string
       archived: @archived,
       multiplayer: @multiplayer,
-      last_played_at: @last_played_at
+      last_played_at: @last_played_at.to_s # Convert Date to a string
     }.to_json(option)
   end
 end
