@@ -1,0 +1,25 @@
+[
+  {
+    "id": 394,
+    "publisher": "Netflix",
+    "cover_state": "good",
+    "publish_date": "2023-09-12",
+    "on_spotify": "true"
+  },
+  {
+    "id": 756,
+    "publisher": "MJ Label",
+    "cover_state": "bad",
+    "publish_date": "2023-09-12",
+    "archived": false,
+    "on_spotify": "false"
+  },
+  {
+    "id": 155,
+    "publisher": "Bil",
+    "cover_state": "new",
+    "publish_date": "2023-09-15",
+    "archived": false,
+    "on_spotify": "true"
+  }
+]
