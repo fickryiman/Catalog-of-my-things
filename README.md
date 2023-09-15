@@ -154,7 +154,7 @@
 
 
 ### Demo Project Video 
-[![Watch the video](./public/video_demo.png)](https://www.youtube.com/watch?v=B_Q1ST4PHag)
+[![Watch the video](./public/video_demo.png)](https://youtu.be/PHb_wKwOptM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
